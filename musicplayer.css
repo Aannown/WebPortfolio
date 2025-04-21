@@ -1,0 +1,131 @@
+.music-box {
+    font-family: 'Minecraft', sans-serif;
+
+    position: fixed;
+    bottom: 30px;
+    left: -270px; /* hidden by default */
+    width: 250px;
+    padding: 23px;
+    background: url('images/ironwallpaper.png') no-repeat center center;
+    background-size: cover;
+    border: 3px solid #654321;
+    color: #222;
+    z-index: 1000;
+    transition: left 0.5s ease;
+    image-rendering: pixelated;
+  }
+  
+  .music-header {
+color: #228B22;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .controls button {
+    font-family: 'Minecraft', sans-serif;
+
+    background-color: #228B22;
+    border: 2px solid #006400;
+    color: #222;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    padding: 10 px;
+    cursor: pointer;
+    image-rendering: pixelated;
+  }
+  
+  .track-name {
+    font-size: 20px;
+    font-family: 'Minecraft', sans-serif;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    background: none;
+    border: none;
+    color: #222;
+    font-family: 'Minecraft', sans-serif;
+    cursor: pointer;
+  }
+  .open-btn {
+    position: fixed;
+    bottom: 30px;  /* Bottom-left corner */
+    left: 10px;
+    width: 120px;
+    height: 120px;
+    background: url('images/note_block.png') no-repeat center center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 0;
+  }
+  
+  /* Tooltip wrapper */
+  .tooltipmusic {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Tooltip text on right */
+  .tooltipmusic .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #fff;
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Minecraft', sans-serif;
+  
+    position: absolute;
+    top: 50%;
+    left: 110%;  /* Push to the right of the button */
+    transform: translateY(-50%);
+    z-index: 1001;
+  
+    opacity: 0;
+    transition: opacity 0.3s;
+    image-rendering: pixelated;
+  }
+  
+  /* Show tooltip on hover */
+  .tooltipmusic:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 12px;
+    background-color: #333;
+    border: 2px solid #006400;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #32CD32; /* Lime green like XP bar */
+    transition: width 0.25s linear;
+    image-rendering: pixelated;
+  }
+  
